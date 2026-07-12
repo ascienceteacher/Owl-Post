@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071d3a">
+  <meta name="description" content="Owl Post helps students build stronger connections between school and home through meaningful communication.">
+  <title>Owl Post</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#071d3a;
+      --blue:#0757a6;
+      --red:#ed2d24;
+      --yellow:#f7c600;
+      --paper:#f8f5ed;
+      --ink:#0b0b0b;
+      --line:5px solid var(--ink);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif}
+    body{border-top:10px solid var(--red)}
+    .topbar{height:10px;background:linear-gradient(90deg,var(--red) 0 36%,var(--blue) 36% 72%,var(--yellow) 72%)}
+    .shell{max-width:1500px;margin:0 auto;padding:18px}
+    .hero{position:relative;background:#fff;border:var(--line);box-shadow:10px 10px 0 var(--yellow);overflow:hidden}
+    .hero img{display:block;width:100%;height:auto}
+    .launch-strip{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 22px;background:var(--navy);color:#fff;border-top:var(--line)}
+    .launch-strip h1{font-family:'Luckiest Guy',cursive;font-size:clamp(30px,4vw,54px);letter-spacing:1px;line-height:1;margin:0}
+    .launch-strip p{margin:5px 0 0;font-size:clamp(14px,1.4vw,18px);font-weight:700}
+    .jump{display:inline-block;white-space:nowrap;background:var(--red);color:#fff;text-decoration:none;border:4px solid #fff;padding:13px 20px;font-weight:900;font-size:17px;box-shadow:6px 6px 0 var(--yellow)}
+    .jump:hover,.jump:focus{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--yellow)}
+    .app-section{margin-top:24px;background:#fff;border:var(--line);box-shadow:10px 10px 0 var(--blue)}
+    .app-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 18px;border-bottom:var(--line);background:linear-gradient(90deg,#fff 0 76%,var(--yellow) 76%)}
+    .app-heading h2{font-family:'Luckiest Guy',cursive;color:var(--navy);font-size:clamp(26px,3vw,40px);letter-spacing:1px;margin:0}
+    .app-heading span{font-size:14px;font-weight:900}
+    .app-frame{width:100%;height:880px;background:#fff}
+    iframe{display:block;width:100%;height:100%;border:0;background:#fff}
+    footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:24px;padding:12px 18px;background:var(--navy);color:#fff;border:var(--line);font-size:13px;font-weight:900}
+    @media(max-width:760px){
+      .shell{padding:10px}
+      .launch-strip{align-items:flex-start;flex-direction:column}
+      .jump{width:100%;text-align:center}
+      .app-heading{align-items:flex-start;flex-direction:column;background:#fff}
+      .app-frame{height:980px}
+      .hero,.app-section{box-shadow:6px 6px 0 var(--yellow)}
+      .app-section{box-shadow:6px 6px 0 var(--blue)}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar" aria-hidden="true"></div>
+  <div class="shell">
+    <section class="hero" aria-label="Owl Post welcome">
+      <img src="owl-post-rowlie.png" alt="Owl Post with Rowlie typing at a computer, without goggles, in a Mondrian-inspired design">
+      <div class="launch-strip">
+        <div>
+          <h1>WELCOME TO OWL POST</h1>
+          <p>Helping students build stronger connections between school and home through meaningful communication.</p>
+        </div>
+        <a class="jump" href="#owl-post-app">OPEN OWL POST ↓</a>
+      </div>
+    </section>
+
+    <section class="app-section" id="owl-post-app" aria-label="Owl Post application">
+      <div class="app-heading">
+        <h2>STUDENTS WRITE. TEACHERS REVIEW. FAMILIES STAY CONNECTED.</h2>
+        <span>Secure • Private • Teacher Approved</span>
+      </div>
+      <div class="app-frame">
+        <iframe
+          src="https://script.google.com/macros/s/AKfycbyM7SfBS4IXLwLYczEScaXwcm6fTbyDyIJhCdTpvYTzHYHx_07OoC0Q0RvshFJT3a3T/exec"
+          title="Owl Post Application"
+          allow="clipboard-write"
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+    </section>
+
+    <footer><span>OWL POST</span><span>Created by Bekka Stasny</span></footer>
+  </div>
+</body>
+</html>
