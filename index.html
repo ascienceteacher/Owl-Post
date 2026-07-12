@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071d3a">
+  <meta name="description" content="Owl Post helps students build stronger connections between school and home through meaningful communication.">
+  <title>Owl Post</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@500;700;900&display=swap" rel="stylesheet">
+  <script src="config.js"></script>
+  <style>
+    :root{--navy:#071d3a;--blue:#0757a6;--red:#e52b20;--yellow:#f5c400;--paper:#f8f5ed;--ink:#090909;--line:5px solid var(--ink)}
+    *{box-sizing:border-box} html,body{height:100%;margin:0} body{font-family:Inter,Arial,sans-serif;background:var(--paper);color:var(--ink)}
+    .page{min-height:100%;display:grid;grid-template-rows:auto 1fr auto;background:linear-gradient(90deg,transparent 0 97%,var(--yellow) 97%)}
+    .colorbar{height:22px;display:grid;grid-template-columns:1.15fr .85fr 1fr;border-bottom:var(--line)}
+    .colorbar span:nth-child(1){background:var(--red)}.colorbar span:nth-child(2){background:var(--blue)}.colorbar span:nth-child(3){background:var(--yellow)}
+    header{display:grid;grid-template-columns:minmax(250px,430px) 1fr;gap:28px;align-items:center;padding:24px 4vw;background:#fff;border-bottom:var(--line)}
+    .brand h1{font-family:'Luckiest Guy',cursive;font-size:clamp(58px,9vw,118px);line-height:.75;letter-spacing:2px;margin:0;color:var(--navy);text-shadow:3px 3px 0 #fff}
+    .brand h1 span:nth-child(2){color:var(--blue)}.brand h1 span:nth-child(3){color:var(--yellow)}.brand h1 span:nth-child(4){color:var(--red)}
+    .tagline{font-weight:900;font-size:clamp(16px,2vw,25px);margin:16px 0 0;max-width:700px}
+    .envelope{font-size:clamp(45px,7vw,85px);justify-self:end;border:var(--line);padding:8px 18px;background:#fff;box-shadow:9px 9px 0 var(--yellow)}
+    main{display:grid;grid-template-columns:minmax(310px,44%) 1fr;min-height:0}
+    .art{padding:25px;border-right:var(--line);background:#fff;display:flex;align-items:center;justify-content:center}
+    .art img{width:100%;max-width:760px;display:block;border:var(--line);box-shadow:12px 12px 0 var(--yellow)}
+    .launch{padding:28px;display:flex;flex-direction:column;min-width:0;background:linear-gradient(135deg,#fff 0 65%,#f7f2e5 65%)}
+    .panel{border:var(--line);background:#fff;box-shadow:12px 12px 0 var(--blue);padding:22px;margin-bottom:24px}
+    .panel h2{font-family:'Luckiest Guy';font-size:clamp(34px,4vw,58px);margin:0;color:var(--navy);letter-spacing:1px}
+    .panel p{font-size:18px;line-height:1.5;margin-bottom:0}
+    .app-shell{position:relative;flex:1;min-height:650px;border:var(--line);background:#fff;overflow:hidden}
+    iframe{width:100%;height:100%;min-height:650px;border:0;background:white}
+    .setup{display:none;height:100%;min-height:650px;padding:34px;align-items:center;justify-content:center;text-align:center}
+    .setup-card{max-width:680px}.setup h2{font-family:'Luckiest Guy';font-size:48px;color:var(--red);margin:0 0 10px}.setup code{display:block;text-align:left;background:#f1eee6;padding:14px;border:3px solid #000;overflow:auto;margin:18px 0;font-size:14px}.setup ol{text-align:left;line-height:1.7}
+    footer{background:var(--navy);color:#fff;padding:18px 4vw;font-weight:800;border-top:var(--line);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:900px){header{grid-template-columns:1fr auto}.envelope{font-size:45px}main{grid-template-columns:1fr}.art{border-right:0;border-bottom:var(--line)}.art img{max-width:580px}.app-shell,iframe,.setup{min-height:760px}}
+    @media(max-width:560px){header{padding:18px}.brand h1{font-size:64px}.tagline{font-size:15px}.envelope{display:none}.art{padding:14px}.launch{padding:14px}.panel{box-shadow:7px 7px 0 var(--blue)}.panel h2{font-size:38px}.app-shell,iframe,.setup{min-height:820px}}
+  </style>
+</head>
+<body>
+<div class="page">
+  <div class="colorbar" aria-hidden="true"><span></span><span></span><span></span></div>
+  <header>
+    <div class="brand">
+      <h1><span>OWL</span> <span>P</span><span>O</span><span>ST</span></h1>
+      <p class="tagline">Helping students build stronger connections between school and home through meaningful communication.</p>
+    </div>
+    <div class="envelope" aria-label="Owl Post mail">✉️</div>
+  </header>
+  <main>
+    <section class="art"><img src="owl-post-rowlie.png" alt="Rowlie the owl typing an Owl Post message on a computer"></section>
+    <section class="launch">
+      <div class="panel">
+        <h2>SHARE IMPORTANT UPDATES. STAY CONNECTED.</h2>
+        <p>Students write. Teachers review. Families stay connected.</p>
+      </div>
+      <div class="app-shell">
+        <iframe id="appFrame" title="Owl Post Application" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="setup" id="setupMessage">
+          <div class="setup-card">
+            <h2>ONE QUICK SETUP STEP</h2>
+            <p>Add your deployed Apps Script web-app address to <strong>config.js</strong>.</p>
+            <ol><li>Open <strong>config.js</strong>.</li><li>Replace the placeholder inside <strong>webAppUrl</strong>.</li><li>Commit the change to GitHub.</li></ol>
+            <code>webAppUrl: "https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec"</code>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><span>OWL POST</span><span>Created by Bekka Stasny</span></footer>
+</div>
+<script>
+  const url=(window.OWL_POST_CONFIG&&window.OWL_POST_CONFIG.webAppUrl||'').trim();
+  const valid=/^https:\/\/script\.google\.com\/.+\/exec(?:\?.*)?$/.test(url);
+  const frame=document.getElementById('appFrame');
+  const setup=document.getElementById('setupMessage');
+  if(valid){frame.src=url;}else{frame.style.display='none';setup.style.display='flex';}
+</script>
+</body>
+</html>
