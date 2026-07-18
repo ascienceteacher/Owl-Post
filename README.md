@@ -1,48 +1,38 @@
-# Owl Post
+# Owl Post — GitHub Direct App
 
-**Helping students build stronger connections between school and home through meaningful communication.**
+Owl Post now runs visually from GitHub Pages while Google Apps Script quietly handles:
 
-Owl Post is a student-to-family communication tool with teacher approval.
+- student roster authentication
+- student submissions
+- teacher authentication
+- the approval queue
+- sending approved parent emails
+- updating the Pending and Sent sheets
 
-## Current features
+The browser address remains the GitHub Pages address rather than changing to Google Apps Script.
 
-- Student login using name, teacher, period 1–7, and student ID
-- Teacher dropdown loaded from the connected Google Sheet
-- Guided message types and sentence prompts
-- Student preview before submission
-- Teacher-specific approval queue
-- Teachers may edit, approve and send, or return a message
-- Parent email with professional Owl Post formatting
-- Teacher copied on approved emails
-- Replies directed to the approving teacher
-- Current approved teachers: Ms. Stasny and Ms. Chlebina
-- Mondrian-inspired design with Rowlie and Luckiest Guy headings
-- No science-specific wording
+## GitHub Pages address
 
-## Live Apps Script application
+`https://ascienceteacher.github.io/Owl-Post/`
 
-https://script.google.com/macros/s/AKfycbwA9tFPc818K9To3RR95ilI6-ASF4IZf26aqfi5mMVzH35IYpS3RhcOdo2_eGFgNWbD/exec
+## Connected Apps Script deployment
 
-## GitHub Pages
+`https://script.google.com/macros/s/AKfycbyAYu8RHymRVFQ8LXakudtlPU0betyoXiXf5suPTrhMDW9Z_CeYbp8jmpzVwyjQPzdA/exec`
 
-This repository contains a public landing page that displays the interactive Google Apps Script application.
+## Files uploaded to GitHub
 
-Expected GitHub Pages address:
+- `index.html`
+- `owl-post-rowlie.png`
+- `.nojekyll`
+- `README.md`
 
-https://ascienceteacher.github.io/Owl-Post/
+Do not upload `Code.gs` to the public GitHub repository because it contains the private spreadsheet/backend logic.
 
-## Publishing
+## Required Apps Script deployment
 
-In the repository, open:
+Deploy the Apps Script web app as:
 
-**Settings → Pages**
+- Execute as: **Me**
+- Who has access: the same access setting currently used by the working Owl Post deployment
 
-Choose:
-
-- Source: **Deploy from a branch**
-- Branch: **main**
-- Folder: **/(root)**
-
-## Important Google sign-in note
-
-When several Google accounts are signed into the same browser, Google may display an “unable to open” message. Open Owl Post in a private/incognito window and sign in with the correct school account.
+After replacing `Code.gs`, edit the existing deployment and select **New version**. Keeping the existing deployment preserves the API URL already written into `index.html`.
