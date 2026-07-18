@@ -1,0 +1,31 @@
+OWL POST — FINAL GITHUB UPLOAD
+
+FILES TO UPLOAD
+• index.html
+• owl-post-rowlie.png
+• README.md
+• .nojekyll
+
+The current working Apps Script URL is already included in index.html.
+You do not need to edit any code.
+
+REPLACE THE OLD FILES
+1. Open the Owl-Post repository on GitHub.
+2. Choose Add file > Upload files.
+3. Drag the four files from this folder into the upload area.
+4. GitHub will replace files with matching names.
+5. Enter the commit message: Final working Owl Post
+6. Click Commit changes.
+
+CHECK GITHUB PAGES
+1. Open Settings > Pages.
+2. Source: Deploy from a branch.
+3. Branch: main.
+4. Folder: /(root).
+5. Save if needed.
+
+LIVE PAGE
+https://ascienceteacher.github.io/Owl-Post/
+
+GOOGLE ACCOUNT NOTE
+If the embedded app shows a Google error, click “Open Owl Post in a New Tab” and use an Incognito window signed into the correct school account.
