@@ -1,11 +1,11 @@
-# Owl Post GitHub Redirect
+# Owl Post – Returned to Me + Batch Approval
 
-This GitHub Pages site redirects visitors to the Rowlett Middle Academy Google Apps Script deployment.
-
-## Current school-domain web app
-
-https://script.google.com/a/macros/rowlettmiddleacademy.org/s/AKfycbxv2TosP_kUG-xGNVBUzd_VvA-JVvyAzjOvd3BMkT9XmBvZ9RqtQvCRO59OlzC5lF6q/exec
-
-## GitHub Pages address
-
-https://ascienceteacher.github.io/Owl-Post/
+This version includes:
+- Returned to Me student revisions
+- Teacher feedback
+- Duplicate-submission protection
+- Message checkboxes
+- Select All
+- Approve Selected
+- Return Selected with feedback required for every selected student
+- One Teacher Hub refresh after a batch action
